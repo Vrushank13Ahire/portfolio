@@ -460,6 +460,83 @@ h1 {
     background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
 }
 
+/* Community & Engagements Section */
+.community {
+    padding: 5rem 0;
+    background: #ffffff;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.community-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.community-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.community-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.community-icon.cncf {
+    background: #e0e7ff;
+    color: #4f46e5;
+}
+
+.community-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.community-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.community-tag {
+    display: inline-block;
+    padding: 0.25rem 0.875rem;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #2563eb;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.community-tag.cncf-tag {
+    background: #e0e7ff;
+    color: #4f46e5;
+}
+
+.community-card p {
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
 /* Projects Section */
 .projects {
     padding: 5rem 0;
@@ -1000,6 +1077,10 @@ h1 {
     }
 
     .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .community-grid {
         grid-template-columns: 1fr;
     }
 
